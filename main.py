@@ -32,6 +32,9 @@ if __name__ == '__main__':
     running = True
     iteration = 0
     f = True
+    fps = 60
+    clock = pygame.time.Clock()
+    clock.tick(fps)
     while running:
         # внутри игрового цикла ещё один цикл
         # приёма и обработки сообщений
@@ -48,10 +51,13 @@ if __name__ == '__main__':
 
             # ...
         if iteration == 0:
+            main_class_game.Loading(screen)
+            iteration = 1
+        if iteration == 1:
             if f:
                 main_class_game.menu.initialization(screen)
                 f = False
-        elif iteration == 1:
+        elif iteration == 2:
             if f:
                 main_class_game.seting.initialization(screen)
                 f = False
