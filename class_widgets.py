@@ -26,3 +26,8 @@ class PushButton:
             return True
         else:
             return False
+
+
+class Game:
+    def __init__(self):
+        pass

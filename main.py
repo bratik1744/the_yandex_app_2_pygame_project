@@ -7,11 +7,14 @@ def push(iteration, but):
         if but == 2:
             f = True
             return 1
-    elif but == 1:
-        f = True
-        return 0
-    else:
-        return iteration
+        else:
+            return 0
+    elif iteration == 1:
+        if but == 1:
+            f = True
+            return 0
+        else:
+            return 1
 
 
 if __name__ == '__main__':
@@ -38,7 +41,7 @@ if __name__ == '__main__':
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 but = main_class_game.menu.prow((event.pos[0], event.pos[1]))
-                if but == 3:
+                if but == 3 and iteration == 0:
                     running = False
                 # РЕАКЦИЯ НА ОСТАЛЬНЫЕ СОБЫТИЯ
                 iteration = push(iteration, but)
@@ -48,8 +51,9 @@ if __name__ == '__main__':
             if f:
                 main_class_game.menu.initialization(screen)
                 f = False
-        else:
+        elif iteration == 1:
             if f:
                 main_class_game.seting.initialization(screen)
                 f = False
+
         pygame.display.flip()
