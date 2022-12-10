@@ -52,15 +52,15 @@ class Loading:
     def __init__(self, screen):
         progress = 0
         run = True
-        while progress < 33:
+        pygame.draw.rect(screen, (255, 255, 255), (50, 500, 700, 50), 1)
+        while progress < 630:
             self.draw(progress, screen)
-            progress += 0.005
+            progress += 0.05
 
     def draw(self, progress, screen):
-        screen.fill((0, 0, 0))
-        pygame.draw.rect(screen, (255, 255, 255), (50, 500, 700, 50), 1)
-        for i in range(int(progress)):
-            pygame.draw.rect(screen, (255, 255, 255), (50 + i * 10, 500, 70 + i * 10, 50), 0)
+        #screen.fill((0, 0, 0))
+
+        pygame.draw.rect(screen, (255, 255, 255), (50, 500, 70 + int(progress), 50), 0)
         pygame.display.flip()
 
 

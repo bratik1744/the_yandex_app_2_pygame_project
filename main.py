@@ -3,18 +3,18 @@ import main_class_game
 
 def push(iteration, but):
     global f
-    if iteration == 0:
+    if iteration == 1:
         if but == 2:
             f = True
-            return 1
+            return 2
         else:
-            return 0
-    elif iteration == 1:
+            return 1
+    elif iteration == 2:
         if but == 1:
             f = True
-            return 0
-        else:
             return 1
+        else:
+            return 2
 
 
 if __name__ == '__main__':
@@ -44,7 +44,7 @@ if __name__ == '__main__':
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 but = main_class_game.menu.prow((event.pos[0], event.pos[1]))
-                if but == 3 and iteration == 0:
+                if but == 3 and iteration == 1:
                     running = False
                 # РЕАКЦИЯ НА ОСТАЛЬНЫЕ СОБЫТИЯ
                 iteration = push(iteration, but)
