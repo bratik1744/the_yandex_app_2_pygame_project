@@ -2,23 +2,23 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bratik1744&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 ![](https://komarev.com/ghpvc/?username=bratik1744)
 
-<h3 align="center">игра</h3>
-<h3 align="center">жанр игры: новелла</h3>
-<h3 align="center">статус разработки: нихрена не написано, даже не начинали</h3>
+<h3 align="center">Игра</h3>
+<h3 align="center">Жанр игры: новелла.</h3>
+<h3 align="center">Статус разработки: написание сюжета.</h3>
 <h1 align="center"></h1>
 
-<h3 align="center">об игре: богатая девушка похитила бедного парня, презиравшего богатых,
-т.к. очень его любит. Парень в начале ненавидит её, но постепенно 
+<h3 align="center">Об игре: богатая девушка похитила бедного парня, презиравшего богатых,
+т.к. очень его любит. Парень сначала ненавидит её, но постепенно 
 его отношение меняется...</h3>
 <h1 align="center"></h1>
 
-<h3 align="center">поддерживаемые языки: </h3>
-<h3 align="center">- интерфейс - русский </h3>
-<h3 align="center">- озвучка - отсутствует</h3>
-<h3 align="center">- субтитры - русский</h3>
+<h3 align="center">Поддерживаемые языки: русский.</h3>
+<h3 align="center">- Интерфейс - русский. </h3>
+<h3 align="center">- озвучка - отсутствует.</h3>
+<h3 align="center">- Субтитры - русский.</h3>
 <h1 align="center"></h1>
 
-<h3 align="center">придумали, разработали, отдебажили и сделали вообще всё: </h3>
+<h3 align="center">Разработчики: </h3>
 <h3 align="center">- bratik1744</h3>
 <h3 align="center">- Lain</h3>
 <h1 align="center"></h1>
@@ -30,13 +30,13 @@
 <h3 align="center">- глубокий сюжет</h3>
 <h1 align="center"></h1>
 
-<h3 align="center">письма благодарности, гневные комментария, пожелания, информацию об 
-ошибках и прочую хрень которую никто не будет читать, отправлять на почту 
-saftafkar1@gmail.com</h3>
+<h3 align="center">Письма благодарности, гневные комментария, пожелания, информацию об 
+ошибках и прочие обращения, отправлять на почту 
+saftafkar1@gmail.com.</h3>
 <h1 align="center"></h1>
 
 <h3 align="center">Если вы желаете выразить благодарность в виде материальных благ, то
-милости просим ко мне в тг: @bratik1744</h3>
+вы можете обратиться по этому адресу телеграм: @bratik1744.</h3>
 <h1 align="center"></h1>
 <img height="300" width="300" src="https://antareskbr.ru/wp-content/uploads/2021/09/maxresdefault.jpg" />
 <img height="300" width="300" src="https://infoselection.ru/media/k2/items/cache/d197c421d422f5cbf569ea13f09ef700_XL.jpg" />
