@@ -14,7 +14,7 @@
 
 <h3 align="center">Поддерживаемые языки: русский.</h3>
 <h3 align="center">- Интерфейс - русский. </h3>
-<h3 align="center">- озвучка - отсутствует.</h3>
+<h3 align="center">- Озвучка - отсутствует.</h3>
 <h3 align="center">- Субтитры - русский.</h3>
 <h1 align="center"></h1>
 
@@ -24,10 +24,10 @@
 <h1 align="center"></h1>
 
 <h3 align="center">Метки игры:</h3>
-<h3 align="center">- инди</h3>
+<h3 align="center">- Инди</h3>
 <h3 align="center">- 2D</h3>
-<h3 align="center">- визуальная новелла</h3>
-<h3 align="center">- глубокий сюжет</h3>
+<h3 align="center">- Визуальная новелла</h3>
+<h3 align="center">- Глубокий сюжет</h3>
 <h1 align="center"></h1>
 
 <h3 align="center">Письма благодарности, гневные комментария, пожелания, информацию об 
