@@ -41,13 +41,4 @@ saftafkar1@gmail.com.</h3>
 <img height="300" width="300" src="https://antareskbr.ru/wp-content/uploads/2021/09/maxresdefault.jpg" />
 <img height="300" width="300" src="https://infoselection.ru/media/k2/items/cache/d197c421d422f5cbf569ea13f09ef700_XL.jpg" />
 <img height="300" width="300" src="https://static.tildacdn.com/tild6362-6362-4031-a163-386439643763/26327oIBGrea0f72ee8e.png" />
-<img src="https://readme-jokes.v
-
-
-
-
-
-
-
-
-ercel.app/api" alt="Jokes Card" />
+<img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
