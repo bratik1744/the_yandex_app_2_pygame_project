@@ -67,7 +67,7 @@ class App:
 
     def run(self):
         start = time.time()
-        while time.time() - start < 10:
+        while time.time() - start < 5:
             # self.screen.fill('black')
             self.screen.blit(self.alpha_surface, (0, 0))
             self.starfield.run()
