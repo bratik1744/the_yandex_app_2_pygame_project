@@ -74,7 +74,7 @@ if __name__ == '__main__':
 
             # ...
         if iteration == 0:
-            main_class_game.Loading(screen)
+            #main_class_game.Loading(screen)
             iteration = 1
         if iteration == 1:
             if f:
@@ -85,7 +85,7 @@ if __name__ == '__main__':
                 main_class_game.seting.initialization(screen)
                 f = False
         elif iteration == 3:
-            space.f()
+            #space.f()
             iteration = 4
         elif iteration == 4:
             if f:

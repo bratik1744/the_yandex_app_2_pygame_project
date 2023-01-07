@@ -70,22 +70,24 @@ class Loading:
 class Game:
     def __init__(self):
         self.but1 = class_widgets.PushButton((300, 0), 'выйти из игры', 50, (0, 0, 0), pygame.Color(200, 200, 200))
-        self.number = 0
+        self.id_dialog = 0
+        self.id_branching = 0
 
     def initialization(self, screen):
         con = sqlite3.connect("plot.db")
         cur = con.cursor()
-        hist = cur.execute(f"SELECT * FROM plot WHERE id = '{self.number}'").fetchall()
+        branching = cur.execute(f"SELECT * FROM branching_main WHERE id = '{self.id_branching}'").fetchall()
+        hist = cur.execute(f"SELECT * FROM {branching[0][1]} WHERE id = '{self.id_dialog}'").fetchall()
         #print(hist)
-        self.number = hist[0][3]
-        dog_surf = pygame.image.load(hist[0][2])
+        self.id_dialog += 1
+        dog_surf = pygame.image.load(hist[0][3])
         dog_rect = dog_surf.get_rect(
             bottomright=(800, 600))
         screen.blit(dog_surf, dog_rect)
         pygame.draw.rect(screen, (200, 200, 200), (0,  500, 800, 600), 0)
         font = pygame.font.Font(None, 40)
         text = font.render(hist[0][1], True, (0, 0, 0))
-        text2 = font.render(hist[0][4], True, (0, 0, 0))
+        text2 = font.render(hist[0][2], True, (0, 0, 0))
         screen.blit(text, (20, 550))
         screen.blit(text2, (300, 500))
         self.but1.draw(screen)
