@@ -1,6 +1,18 @@
 import pygame
 import class_widgets
 import sqlite3
+import tkinter
+import tkinter.filedialog
+
+
+def prompt_file():
+    """Create a Tk file dialog and cleanup when finished"""
+    top = tkinter.Tk()
+    top.withdraw()  # hide window
+    file_name = tkinter.filedialog.askopenfilename(parent=top)
+    top.destroy()
+    return file_name
+
 class Menu:
     def __init__(self):
         self.but1 = class_widgets.PushButton((300, 150), 'новая игра', 50, (0, 0, 0), pygame.Color(200, 200, 200))
@@ -34,6 +46,7 @@ class Menu:
 class Setings:
     def __init__(self):
         self.but1 = class_widgets.PushButton((300, 150), 'назад', 50, (0, 0, 0), (200, 200, 200, 50))
+        self.but2 = class_widgets.PushButton((300, 250), 'запустить мод', 50, (0, 0, 0), (200, 200, 200, 50))
 
     def initialization(self, screen):
         dog_surf = pygame.image.load('pictures/menu.png')
@@ -43,11 +56,14 @@ class Setings:
 
         pygame.display.update()
         self.but1.draw(screen)
+        self.but2.draw(screen)
         pygame.display.update()
 
     def prow(self, pos):
         if self.but1.prow(pos):
             return 1
+        elif self.but2.prow(pos):
+            return 2
         else:
             return 0
 
@@ -74,7 +90,10 @@ class Game:
         self.id_branching = 0
 
     def initialization(self, screen):
-        con = sqlite3.connect("plot.db")
+        f = open('mode.txt', 'r')
+        plot = f.readline()
+        f.close()
+        con = sqlite3.connect(plot)
         cur = con.cursor()
         branching = cur.execute(f"SELECT * FROM branching_main WHERE id = '{self.id_branching}'").fetchall()
         hist = cur.execute(f"SELECT * FROM {branching[0][1]} WHERE id = '{self.id_dialog}'").fetchall()

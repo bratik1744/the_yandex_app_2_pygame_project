@@ -26,6 +26,13 @@ def push(iteration, pos):
         if but == 1:
             f = True
             return 1
+        elif but == 2:
+            file = main_class_game.prompt_file()
+            fil = open('mode.txt', 'w')
+            fil.write(file)
+            fil.close()
+            f = True
+            return 1
         else:
             return 2
     elif iteration == 3:
@@ -41,6 +48,9 @@ def push(iteration, pos):
 
 
 if __name__ == '__main__':
+    fil = open('mode.txt', 'w')
+    fil.write('plot.db')
+    fil.close()
     # инициализация Pygame:
     pygame.init()
     # размеры окна:

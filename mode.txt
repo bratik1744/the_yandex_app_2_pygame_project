@@ -1,0 +1,1 @@
+/home/bratik/PycharmProjects/the_yandex_app_2_pygame_project/main.py
