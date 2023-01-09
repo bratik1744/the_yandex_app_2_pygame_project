@@ -42,9 +42,16 @@ def push(iteration, pos):
         if but == 1:
             running = False
             return 4
+        elif but == -1:
+            return 4
         else:
             f = True
             return 4
+
+
+def ff():
+    global f
+    f = True
 
 
 if __name__ == '__main__':
@@ -104,5 +111,6 @@ if __name__ == '__main__':
 
 
     pygame.display.flip()
+
 
 
