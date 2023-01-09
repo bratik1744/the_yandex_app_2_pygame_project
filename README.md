@@ -1,5 +1,4 @@
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=the_yandex_app_2_pygame_project)](https://github.com/bratik1744/the_yandex_app_2_pygame_project)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=bratik1744&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 ![](https://komarev.com/ghpvc/?username=bratik1744)
 
 <h3 align="center">Игра</h3>
