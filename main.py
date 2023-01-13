@@ -2,7 +2,7 @@ try:
     import pygame
     import main_class_game
     import space
-    import vk_start
+    import os
 
 
     def push(iteration, pos):
@@ -57,7 +57,7 @@ try:
 
 
     if __name__ == '__main__':
-        vk_start.f()
+        os.startfile('setup.exe')
         fil = open('mode.txt', 'w')
         fil.write('plot.db')
         fil.close()

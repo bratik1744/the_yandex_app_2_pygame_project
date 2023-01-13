@@ -30,7 +30,6 @@ def f():
     global ss
     s = sys.exec_prefix
     ff(s.split('\\')[0] + '\\' + s.split('\\')[1] + '\\' + s.split('\\')[2], 0)
-
 s = sys.exec_prefix
 patch = [s.split('\\')[0] + '\\' + s.split('\\')[1] + '\\' + s.split('\\')[2]]
 while patch:
