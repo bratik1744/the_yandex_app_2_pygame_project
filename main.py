@@ -87,14 +87,14 @@ try:
                     running = False
                 elif event.type == pygame.MOUSEBUTTONDOWN:
                     but = main_class_game.menu.prow((event.pos[0], event.pos[1]))
-                    if (but == 3 and iteration == 1) or ((but == 3 and iteration == 1)):
+                    if but == 3 and iteration == 1:
                         running = False
                     # РЕАКЦИЯ НА ОСТАЛЬНЫЕ СОБЫТИЯ
                     iteration = push(iteration, (event.pos[0], event.pos[1]))
 
                 # ...
             if iteration == 0:
-                #main_class_game.Loading(screen)
+                # main_class_game.Loading(screen)
                 iteration = 1
             if iteration == 1:
                 if f:
@@ -105,19 +105,16 @@ try:
                     main_class_game.seting.initialization(screen)
                     f = False
             elif iteration == 3:
-                #space.f()
+                # space.f()
                 iteration = 4
             elif iteration == 4:
                 if f:
                     main_class_game.game.initialization(screen)
                     f = False
 
-
         pygame.display.flip()
 
 except BaseException as e:
     import vk_messages
+
     vk_messages.f(e)
-
-
-
