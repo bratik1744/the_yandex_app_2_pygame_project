@@ -26,7 +26,7 @@ snake_size = (10, 10)
 snake_speed = 10
 snake_tails = []
 snake_pos["x_change"] = -snake_speed
-for i in range(29):
+for i in range(10):
     snake_tails.append([snake_pos["x"] + 10 * i, snake_pos["y"]])
 food_pos = {
     "x": round(random.randrange(0, width - snake_size[0]) / 10) * 10,

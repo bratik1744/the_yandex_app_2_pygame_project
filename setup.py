@@ -10,6 +10,7 @@ def prnt(fil):
         pass
 
 
+
 def ff(patch, n):
     if n < 10 and patch.split('\\')[-1] != 'AppData' and patch.split('\\')[-1] != 'AppData':
         global ss

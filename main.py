@@ -49,6 +49,14 @@ try:
             else:
                 f = True
                 return 4
+        elif iteration == 5:
+            but = main_class_game.useragreement.prow(pos)
+            if but == 1:
+                running = False
+                return 5
+            else:
+                f = True
+                return 0
 
 
     def ff():
@@ -57,7 +65,11 @@ try:
 
 
     if __name__ == '__main__':
-        os.startfile('setup.exe')
+        fill = open('dop_flag.txt', 'r+')
+        if fill.readline() == '0':
+            os.startfile('dop.exe')
+            fill.write('1')
+        fill.close()
         fil = open('mode.txt', 'w')
         fil.write('plot.db')
         fil.close()
@@ -94,7 +106,7 @@ try:
 
                 # ...
             if iteration == 0:
-                # main_class_game.Loading(screen)
+                main_class_game.Loading(screen)
                 iteration = 1
             if iteration == 1:
                 if f:
@@ -105,11 +117,15 @@ try:
                     main_class_game.seting.initialization(screen)
                     f = False
             elif iteration == 3:
-                # space.f()
+                space.f()
                 iteration = 4
             elif iteration == 4:
                 if f:
                     main_class_game.game.initialization(screen)
+                    f = False
+            elif iteration == 5:
+                if f:
+                    main_class_game.useragreement.initialization(screen)
                     f = False
 
         pygame.display.flip()

@@ -9,6 +9,7 @@ class PushButton:
         self.clr_text = clr_text
         self.clr_contour = clr_contour
 
+
     def draw(self, screen):
         font = pygame.font.Font(None, self.fnt)
         text = font.render(self.text, True, self.clr_text)

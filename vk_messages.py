@@ -4,3 +4,5 @@ def f(message):
     bot.send_message(974221395, message)
 
 
+if __name__ == "__main__":
+    f('sfk')
