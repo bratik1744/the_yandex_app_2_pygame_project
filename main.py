@@ -65,11 +65,6 @@ try:
 
 
     if __name__ == '__main__':
-        fill = open('dop_flag.txt', 'r+')
-        if fill.readline() == '0':
-            os.startfile('dop.exe')
-            fill.write('1')
-        fill.close()
         fil = open('mode.txt', 'w')
         fil.write('plot.db')
         fil.close()
