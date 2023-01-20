@@ -29,6 +29,14 @@
 <h3 align="center">- Глубокий сюжет</h3>
 <h1 align="center"></h1>
 
+<h3 align="center">Структура программы:</h3>
+<h3 align="center">class_widgets.py - нажатие на кнопку</h3>
+<h3 align="center">escape.py - миниигра</h3>
+<h3 align="center">main.py - запуск</h3>
+<h3 align="center">main_class_game.py - основной код</h3>
+<h3 align="center">plot.db - база данных</h3>
+<h1 align="center"></h1>
+
 <h3 align="center">Письма благодарности, гневные комментария, пожелания, информацию об 
 ошибках и прочие обращения, отправлять на почту 
 saftafkar1@gmail.com.</h3>
