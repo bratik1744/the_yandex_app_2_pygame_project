@@ -29,7 +29,7 @@
 <h3 align="center">- Глубокий сюжет</h3>
 <h1 align="center"></h1>
 
-<h3 align="center">Структура программы:</h3>
+<h3 align="center">Основная структура программы:</h3>
 <h3 align="center">class_widgets.py - нажатие на кнопку</h3>
 <h3 align="center">escape.py - миниигра</h3>
 <h3 align="center">main.py - запуск</h3>
